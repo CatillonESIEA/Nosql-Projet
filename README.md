@@ -18,6 +18,7 @@ cd nom-du-projet
 Créer un environnement virtuel et l'activer
 
 python -m venv .venv
+
 .venv\Scripts\activate     # Sur Windows
 
 Installer les dépendances
