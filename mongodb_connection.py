@@ -1,9 +1,15 @@
 from pymongo.mongo_client import MongoClient
 from pymongo.server_api import ServerApi
+from dotenv import load_dotenv
+import os
 
-# URI de connexion avec votre mot de passe
-uri = "mongodb+srv://catillon:2xt42N5KuNRzuMuC@cluster0.o3uh6.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+# Charger les variables d'environnement
+load_dotenv()
 
+# Récupérer l'URI depuis les variables d'environnement
+uri = os.getenv("MONGODB_URI")
+
+# Le reste du fichier reste inchangé...
 # Client MongoDB avec paramètres de timeout
 client = MongoClient(
     uri,

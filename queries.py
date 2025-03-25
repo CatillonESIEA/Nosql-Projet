@@ -3,9 +3,13 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
 from pymongo.server_api import ServerApi
+from dotenv import load_dotenv
+import os
 
-uri = "mongodb+srv://catillon:2xt42N5KuNRzuMuC@cluster0.o3uh6.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
-# Client MongoDB avec paramètres de timeout
+load_dotenv()
+uri = os.getenv("MONGODB_URI")
+
+# Le reste du fichier reste inchangé...
 
 client = MongoClient(
     uri,
