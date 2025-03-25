@@ -2,11 +2,29 @@ from pymongo import MongoClient
 import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
+from pymongo.server_api import ServerApi
 
-# Connexion à MongoDB
-client = MongoClient('mongodb://localhost:27017/')  # Assurez-vous que l'URL est correcte pour votre connexion
-db = client['entertainment']  # Utilisation de la base de données 'entertainment'
-films_collection = db['films']  # Accès à la collection 'films'
+uri = "mongodb+srv://catillon:2xt42N5KuNRzuMuC@cluster0.o3uh6.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+# Client MongoDB avec paramètres de timeout
+
+client = MongoClient(
+    uri,
+    server_api=ServerApi('1'),
+    socketTimeoutMS=60000,  # Timeout des sockets
+    connectTimeoutMS=60000  # Timeout de connexion
+)
+
+try:
+    # Test Ping pour vérifier la connexion
+    client.admin.command('ping')
+    print("Connexion réussie à MongoDB Atlas !")
+except Exception as e:
+    print(f"Erreur : {e}")
+
+
+# Accès à la base de données et à la collection "films"
+db = client["entertainment"]
+films_collection = db["films"]
 
 
 # 1. Afficher l'année où le plus grand nombre de films ont été sortis
@@ -102,9 +120,7 @@ def genre_with_highest_avg_revenue():
         print(f"8. Le genre qui rapporte en moyenne le plus de revenus est {r['_id']} avec {r['avg_revenue']:.2f} millions de dollars.")
 
 
-# 9. Quels sont les 3 films les mieux notés pour chaque décennie ?
-# Requête 9 : Films les mieux notés de chaque décennie
-# 9. Films les mieux notés de la décennie 1990-1999, 2000-2009 et 2010-2019
+# 9. Films les mieux notés de chaque décennie
 def top_rated_films_by_decade():
     decades = ['1990-1999', '2000-2009', '2010-2019']
     print("9.")
@@ -254,7 +270,6 @@ def average_runtime_by_decade():
 
 
 
-# Appels des fonctions pour les tests
 most_films_year()
 print("")
 count_films_after_1999()
