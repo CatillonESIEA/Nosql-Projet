@@ -1,0 +1,1828 @@
+[
+  {
+    "film_id": "100",
+    "title": "The Departed",
+    "genre": "Crime,Drama,Thriller",
+    "director": "Martin Scorsese",
+    "actors": [
+      "Leonardo DiCaprio",
+      "Matt Damon",
+      "Jack Nicholson",
+      "Mark Wahlberg"
+    ],
+    "year": 2006,
+    "runtime": 151,
+    "rating": 0.0,
+    "votes": 937414,
+    "revenue": 132.37,
+    "metascore": 85
+  },
+  {
+    "film_id": "31",
+    "title": "Why Him?",
+    "genre": "Comedy",
+    "director": "John Hamburg",
+    "actors": [
+      "Zoey Deutch",
+      "James Franco",
+      "Tangie Ambrose",
+      "Cedric the Entertainer"
+    ],
+    "year": 2016,
+    "runtime": 111,
+    "rating": 0.0,
+    "votes": 48123,
+    "revenue": 60.31,
+    "metascore": 39
+  },
+  {
+    "film_id": "33",
+    "title": "X-Men: Apocalypse",
+    "genre": "Action,Adventure,Sci-Fi",
+    "director": "Bryan Singer",
+    "actors": [
+      "James McAvoy",
+      "Michael Fassbender",
+      "Jennifer Lawrence",
+      "Nicholas Hoult"
+    ],
+    "year": 2016,
+    "runtime": 144,
+    "rating": 0.0,
+    "votes": 275510,
+    "revenue": 155.33,
+    "metascore": 52
+  },
+  {
+    "film_id": "17",
+    "title": "Hacksaw R_idge",
+    "genre": "Biography,Drama,History",
+    "director": "Mel Gibson",
+    "actors": [
+      "Andrew Garfield",
+      "Sam Worthington",
+      "Luke Bracey",
+      "Teresa Palmer"
+    ],
+    "year": 2016,
+    "runtime": 139,
+    "rating": 0.0,
+    "votes": 211760,
+    "revenue": 67.12,
+    "metascore": 71
+  },
+  {
+    "film_id": "35",
+    "title": "Res_ident Evil: The Final Chapter",
+    "genre": "Action,Horror,Sci-Fi",
+    "director": "Richard Gage",
+    "actors": [
+      "Milla Jovovich",
+      "Iain Glen",
+      "Ali Larter",
+      "Shawn Roberts"
+    ],
+    "year": 2016,
+    "runtime": 107,
+    "rating": 0.0,
+    "votes": 46165,
+    "revenue": 26.84,
+    "metascore": 49
+  },
+  {
+    "film_id": "20",
+    "title": "Arrival",
+    "genre": "Drama,Mystery,Sci-Fi",
+    "director": "Denis Villeneuve",
+    "actors": [
+      "Amy Adams",
+      "Jeremy Renner",
+      "Forest Whitaker",
+      "Michael Stuhlbarg"
+    ],
+    "year": 2016,
+    "runtime": 116,
+    "rating": 0.0,
+    "votes": 340798,
+    "revenue": 100.5,
+    "metascore": 81
+  },
+  {
+    "film_id": "55",
+    "title": "The Dark Knight",
+    "genre": "Action,Crime,Drama",
+    "director": "Christopher Nolan",
+    "actors": [
+      "Christian Bale",
+      "Heath Ledger",
+      "Aaron Eckhart",
+      "Michael Caine"
+    ],
+    "year": 2008,
+    "runtime": 152,
+    "rating": 0.0,
+    "votes": 1791916,
+    "revenue": 533.32,
+    "metascore": 82
+  },
+  {
+    "film_id": "46",
+    "title": "Pirates of the Caribbean: On Stranger T_ides",
+    "genre": "Action,Adventure,Fantasy",
+    "director": "Rob Marshall",
+    "actors": [
+      "Johnny Depp",
+      "Penélope Cruz",
+      "Ian McShane",
+      "Geoffrey Rush"
+    ],
+    "year": 2007,
+    "runtime": 136,
+    "rating": 0.0,
+    "votes": 160,
+    "revenue": 241.06,
+    "metascore": 45
+  },
+  {
+    "film_id": "62",
+    "title": "The Autopsy of Jane Doe",
+    "genre": "Horror,Mystery,Thriller",
+    "director": "André Øvredal",
+    "actors": [
+      "Brian Cox",
+      "Emile Hirsch",
+      "Ophelia Lovibond",
+      "Michael McElhatton"
+    ],
+    "year": 2016,
+    "runtime": 86,
+    "rating": 0.0,
+    "votes": 35870,
+    "revenue": 0.0,
+    "metascore": 65
+  },
+  {
+    "film_id": "43",
+    "title": "Don't Fuck in the Woods",
+    "genre": "Horror",
+    "director": "Shawn Burkett",
+    "actors": [
+      "Brittany Blanton",
+      "Ayse Howard",
+      "Roman Jossart",
+      "Nadia White"
+    ],
+    "year": 2016,
+    "runtime": 73,
+    "rating": 0.0,
+    "votes": 496,
+    "revenue": 0.0,
+    "metascore": ""
+  },
+  {
+    "film_id": "28",
+    "title": "Dead Awake",
+    "genre": "Horror,Thriller",
+    "director": "Phillip Guzman",
+    "actors": [
+      "Jocelin Donahue",
+      "Jesse Bradford",
+      "Jesse Borrego",
+      "Lori Petty"
+    ],
+    "year": 2016,
+    "runtime": 99,
+    "rating": 0.0,
+    "votes": 523,
+    "revenue": 0.01,
+    "metascore": ""
+  },
+  {
+    "film_id": "53",
+    "title": "Mother's Day",
+    "genre": "Comedy,Drama",
+    "director": "Garry Marshall",
+    "actors": [
+      "Jennifer Aniston",
+      "Kate Hudson",
+      "Julia Roberts",
+      "Jason Sudeikis"
+    ],
+    "year": 2016,
+    "runtime": 118,
+    "rating": 0.0,
+    "votes": 20221,
+    "revenue": 32.46,
+    "metascore": 18
+  },
+  {
+    "film_id": "70",
+    "title": "Deepwater Horizon",
+    "genre": "Action,Drama,Thriller",
+    "director": "Peter Berg",
+    "actors": [
+      "Mark Wahlberg",
+      "Kurt Russell",
+      "Douglas M. Griffin",
+      "James DuMont"
+    ],
+    "year": 2016,
+    "runtime": 107,
+    "rating": 0.0,
+    "votes": 89849,
+    "revenue": 61.28,
+    "metascore": 68
+  },
+  {
+    "film_id": "67",
+    "title": "Patriots Day",
+    "genre": "Drama,History,Thriller",
+    "director": "Peter Berg",
+    "actors": [
+      "Mark Wahlberg",
+      "Michelle Monaghan",
+      "J.K. Simmons",
+      "John Goodman"
+    ],
+    "year": 2016,
+    "runtime": 133,
+    "rating": 0.0,
+    "votes": 39784,
+    "revenue": 31.86,
+    "metascore": 69
+  },
+  {
+    "film_id": "30",
+    "title": "Assassin's Creed",
+    "genre": "Action,Adventure,Drama",
+    "director": "Justin Kurzel",
+    "actors": [
+      "Michael Fassbender",
+      "Marion Cotillard",
+      "Jeremy Irons",
+      "Brendan Gleeson"
+    ],
+    "year": 2016,
+    "runtime": 115,
+    "rating": 0.0,
+    "votes": 112813,
+    "revenue": 54.65,
+    "metascore": 36
+  },
+  {
+    "film_id": "47",
+    "title": "Miss Sloane",
+    "genre": "Drama,Thriller",
+    "director": "John Madden",
+    "actors": [
+      "Jessica Chastain",
+      "Mark Strong",
+      "Gugu Mbatha-Raw",
+      "Michael Stuhlbarg"
+    ],
+    "year": 2016,
+    "runtime": 132,
+    "rating": 0.0,
+    "votes": 17818,
+    "revenue": 3.44,
+    "metascore": 64
+  },
+  {
+    "film_id": "89",
+    "title": "The Hateful Eight",
+    "genre": "Crime,Drama,Mystery",
+    "director": "Quentin Tarantino",
+    "actors": [
+      "Samuel L. Jackson",
+      "Kurt Russell",
+      "Jennifer Jason Leigh",
+      "Walton Goggins"
+    ],
+    "year": 2015,
+    "runtime": 187,
+    "rating": 0.0,
+    "votes": 341170,
+    "revenue": 54.12,
+    "metascore": 68
+  },
+  {
+    "film_id": "68",
+    "title": "Mad Max: Fury Road",
+    "genre": "Action,Adventure,Sci-Fi",
+    "director": "George Miller",
+    "actors": [
+      "Tom Hardy",
+      "Charlize Theron",
+      "Nicholas Hoult",
+      "Zoë Kravitz"
+    ],
+    "year": 2015,
+    "runtime": 120,
+    "rating": 0.0,
+    "votes": 632842,
+    "revenue": 153.63,
+    "metascore": 90
+  },
+  {
+    "film_id": "71",
+    "title": "The Promise",
+    "genre": "Drama,History",
+    "director": "Terry George",
+    "actors": [
+      "Oscar Isaac",
+      "Charlotte Le Bon",
+      "Christian Bale",
+      "Daniel Giménez Cacho"
+    ],
+    "year": 2016,
+    "runtime": 133,
+    "rating": 0.0,
+    "votes": 149791,
+    "revenue": 0.0,
+    "metascore": 49
+  },
+  {
+    "film_id": "79",
+    "title": "Pirates of the Caribbean: Dead Man's Chest",
+    "genre": "Action,Adventure,Fantasy",
+    "director": "Gore Verbinski",
+    "actors": [
+      "Johnny Depp",
+      "Orlando Bloom",
+      "Keira Knightley",
+      "Jack Davenport"
+    ],
+    "year": 2006,
+    "runtime": 151,
+    "rating": 0.0,
+    "votes": 552027,
+    "revenue": 423.03,
+    "metascore": 53
+  },
+  {
+    "film_id": "84",
+    "title": "Gone Girl",
+    "genre": "Crime,Drama,Mystery",
+    "director": "Dav_id Fincher",
+    "actors": [
+      "Ben Affleck",
+      "Rosamund Pike",
+      "Neil Patrick Harris",
+      "Tyler Perry"
+    ],
+    "year": 2014,
+    "runtime": 149,
+    "rating": 0.0,
+    "votes": 636243,
+    "revenue": 167.74,
+    "metascore": 79
+  },
+  {
+    "film_id": "9",
+    "title": "The Lost City of Z",
+    "genre": "Action,Adventure,Biography",
+    "director": "James Gray",
+    "actors": [
+      "Charlie Hunnam",
+      "Robert Pattinson",
+      "Sienna Miller",
+      "Tom Holland"
+    ],
+    "year": 2016,
+    "runtime": 141,
+    "rating": 0.0,
+    "votes": 7188,
+    "revenue": 8.01,
+    "metascore": 78
+  },
+  {
+    "film_id": "15",
+    "title": "Colossal",
+    "genre": "Action,Comedy,Drama",
+    "director": "Nacho Vigalondo",
+    "actors": [
+      "Anne Hathaway",
+      "Jason Sudeikis",
+      "Austin Stowell",
+      "Tim Blake Nelson"
+    ],
+    "year": 2016,
+    "runtime": 109,
+    "rating": 0.0,
+    "votes": 8612,
+    "revenue": 2.87,
+    "metascore": 70
+  },
+  {
+    "film_id": "58",
+    "title": "Me Before You",
+    "genre": "Drama,Romance",
+    "director": "Thea Sharrock",
+    "actors": [
+      "Emilia Clarke",
+      "Sam Claflin",
+      "Janet McTeer",
+      "Charles Dance"
+    ],
+    "year": 2016,
+    "runtime": 106,
+    "rating": 0.0,
+    "votes": 113322,
+    "revenue": 56.23,
+    "metascore": 51
+  },
+  {
+    "film_id": "49",
+    "title": "Star Trek Beyond",
+    "genre": "Action,Adventure,Sci-Fi",
+    "director": "Justin Lin",
+    "actors": [
+      "Chris Pine",
+      "Zachary Quinto",
+      "Karl Urban",
+      "Zoe Saldana"
+    ],
+    "year": 2016,
+    "runtime": 122,
+    "rating": 0.0,
+    "votes": 164567,
+    "revenue": 158.8,
+    "metascore": 68
+  },
+  {
+    "film_id": "34",
+    "title": "Deadpool",
+    "genre": "Action,Adventure,Comedy",
+    "director": "Tim Miller",
+    "actors": [
+      "Ryan Reynolds",
+      "Morena Baccarin",
+      "T.J. Miller",
+      "Ed Skrein"
+    ],
+    "year": 2016,
+    "runtime": 108,
+    "rating": 0.0,
+    "votes": 627797,
+    "revenue": 363.02,
+    "metascore": 65
+  },
+  {
+    "film_id": "_design/794d3a1331c7f3304fb7715d2e2b21095f9e1be9",
+    "title": "Sans titre",
+    "genre": "Unknown",
+    "director": "Inconnu",
+    "actors": [],
+    "year": 0,
+    "runtime": 0,
+    "rating": 0.0,
+    "votes": 0,
+    "revenue": 0.0,
+    "metascore": 0
+  },
+  {
+    "film_id": "44",
+    "title": "The Founder",
+    "genre": "Biography,Drama,History",
+    "director": "John Lee Hancock",
+    "actors": [
+      "Michael Keaton",
+      "Nick Offerman",
+      "John Carroll Lynch",
+      "Linda Cardellini"
+    ],
+    "year": 2016,
+    "runtime": 115,
+    "rating": 0.0,
+    "votes": 37033,
+    "revenue": 12.79,
+    "metascore": 66
+  },
+  {
+    "film_id": "76",
+    "title": "Pirates of the Caribbean: At World's End",
+    "genre": "Action,Adventure,Fantasy",
+    "director": "Gore Verbinski",
+    "actors": [
+      "Johnny Depp",
+      "Orlando Bloom",
+      "Keira Knightley",
+      "Geoffrey Rush"
+    ],
+    "year": 2016,
+    "runtime": 169,
+    "rating": 0.0,
+    "votes": 498821,
+    "revenue": 309.4,
+    "metascore": 50
+  },
+  {
+    "film_id": "91",
+    "title": "Prisoners",
+    "genre": "Crime,Drama,Mystery",
+    "director": "Denis Villeneuve",
+    "actors": [
+      "Hugh Jackman",
+      "Jake Gyllenhaal",
+      "Viola Davis",
+      "Melissa Leo"
+    ],
+    "year": 2013,
+    "runtime": 153,
+    "rating": 0.0,
+    "votes": 431185,
+    "revenue": 60.96,
+    "metascore": 74
+  },
+  {
+    "film_id": "99",
+    "title": "Personal Shopper",
+    "genre": "Drama,Mystery,Thriller",
+    "director": "Olivier Assayas",
+    "actors": [
+      "Kristen Stewart",
+      "Lars E_idinger",
+      "Sigr_id Bouaziz",
+      "Anders Danielsen Lie"
+    ],
+    "year": 2016,
+    "runtime": 105,
+    "rating": 0.0,
+    "votes": 10181,
+    "revenue": 1.29,
+    "metascore": 77
+  },
+  {
+    "film_id": "32",
+    "title": "Top Dog",
+    "genre": "Drama,Thriller",
+    "director": "Feliks Falk",
+    "actors": [
+      "Amy Adams",
+      "Jake Gyllenhaal",
+      "Michael Shannon",
+      "Aaron Taylor-Johnson"
+    ],
+    "year": 1978,
+    "runtime": 116,
+    "rating": 0.0,
+    "votes": 126030,
+    "revenue": 10.64,
+    "metascore": 67
+  },
+  {
+    "film_id": "51",
+    "title": "Star Wars: Episode VII - The Force Awakens",
+    "genre": "Action,Adventure,Fantasy",
+    "director": "J.J. Abrams",
+    "actors": [
+      "Daisy R_idley",
+      "John Boyega",
+      "Oscar Isaac",
+      "Domhnall Gleeson"
+    ],
+    "year": 2015,
+    "runtime": 136,
+    "rating": 0.0,
+    "votes": 661608,
+    "revenue": 936.63,
+    "metascore": 81
+  },
+  {
+    "film_id": "14",
+    "title": "Moana",
+    "genre": "Animation,Adventure,Comedy",
+    "director": "Ron Clements",
+    "actors": [
+      "Auli'i Cravalho",
+      "Dwayne Johnson",
+      "Rachel House",
+      "Temuera Morrison"
+    ],
+    "year": 2016,
+    "runtime": 107,
+    "rating": 0.0,
+    "votes": 118151,
+    "revenue": 248.75,
+    "metascore": 81
+  },
+  {
+    "film_id": "25",
+    "title": "Independence Day: Resurgence",
+    "genre": "Action,Adventure,Sci-Fi",
+    "director": "Roland Emmerich",
+    "actors": [
+      "Liam Hemsworth",
+      "Jeff Goldblum",
+      "Bill Pullman",
+      "Maika Monroe"
+    ],
+    "year": 2016,
+    "runtime": 120,
+    "rating": 0.0,
+    "votes": 127553,
+    "revenue": 103.14,
+    "metascore": 32
+  },
+  {
+    "film_id": "42",
+    "title": "Moonlight",
+    "genre": "Drama",
+    "director": "Barry Jenkins",
+    "actors": [
+      "Mahershala Ali",
+      "Shariff Earp",
+      "Duan Sanderson",
+      "Alex R. Hibbert"
+    ],
+    "year": 2016,
+    "runtime": 111,
+    "rating": 0.0,
+    "votes": 135095,
+    "revenue": 27.85,
+    "metascore": 99
+  },
+  {
+    "film_id": "63",
+    "title": "The Girl on the Train",
+    "genre": "Crime,Drama,Mystery",
+    "director": "Tate Taylor",
+    "actors": [
+      "Emily Blunt",
+      "Haley Bennett",
+      "Rebecca Ferguson",
+      "Justin Theroux"
+    ],
+    "year": 2016,
+    "runtime": 112,
+    "rating": 0.0,
+    "votes": 102177,
+    "revenue": 75.31,
+    "metascore": 48
+  },
+  {
+    "film_id": "29",
+    "title": "Bad Moms",
+    "genre": "Comedy",
+    "director": "Jon Lucas",
+    "actors": [
+      "Mila Kunis",
+      "Kathryn Hahn",
+      "Kristen Bell",
+      "Christina Applegate"
+    ],
+    "year": 2016,
+    "runtime": 100,
+    "rating": 0.0,
+    "votes": 66540,
+    "revenue": 113.08,
+    "metascore": 60
+  },
+  {
+    "film_id": "18",
+    "title": "Jason Bourne",
+    "genre": "Action,Thriller",
+    "director": "Paul Greengrass",
+    "actors": [
+      "Matt Damon",
+      "Tommy Lee Jones",
+      "Alicia Vikander",
+      "Vincent Cassel"
+    ],
+    "year": 2016,
+    "runtime": 123,
+    "rating": 0.0,
+    "votes": 150823,
+    "revenue": 162.16,
+    "metascore": 58
+  },
+  {
+    "film_id": "24",
+    "title": "Trolls",
+    "genre": "Animation,Adventure,Comedy",
+    "director": "Walt Dohrn",
+    "actors": [
+      "Anna Kendrick",
+      "Justin Timberlake",
+      "Zooey Deschanel",
+      "Christopher Mintz-Plasse"
+    ],
+    "year": 2016,
+    "runtime": 92,
+    "rating": 0.0,
+    "votes": 38552,
+    "revenue": 153.69,
+    "metascore": 56
+  },
+  {
+    "film_id": "64",
+    "title": "Fifty Shades of Grey",
+    "genre": "Drama,Romance,Thriller",
+    "director": "Sam Taylor-Johnson",
+    "actors": [
+      "Dakota Johnson",
+      "Jamie Dornan",
+      "Jennifer Ehle",
+      "Eloise Mumford"
+    ],
+    "year": 2015,
+    "runtime": 125,
+    "rating": 0.0,
+    "votes": 244474,
+    "revenue": 166.15,
+    "metascore": 46
+  },
+  {
+    "film_id": "3",
+    "title": "Split",
+    "genre": "Horror,Thriller",
+    "director": "M. Night Shyamalan",
+    "actors": [
+      "James McAvoy",
+      "Anya Taylor-Joy",
+      "Haley Lu Richardson",
+      "Jessica Sula"
+    ],
+    "year": 2016,
+    "runtime": 117,
+    "rating": 0.0,
+    "votes": 157606,
+    "revenue": 138.12,
+    "metascore": 62
+  },
+  {
+    "film_id": "85",
+    "title": "Furious Seven",
+    "genre": "Action,Crime,Thriller",
+    "director": "James Wan",
+    "actors": [
+      "Vin Diesel",
+      "Paul Walker",
+      "Dwayne Johnson",
+      "Jason Statham"
+    ],
+    "year": 2015,
+    "runtime": 137,
+    "rating": 0.0,
+    "votes": 301249,
+    "revenue": 350.03,
+    "metascore": 67
+  },
+  {
+    "film_id": "11",
+    "title": "Fantastic Beasts and Where to Find Them",
+    "genre": "Adventure,Family,Fantasy",
+    "director": "Dav_id Yates",
+    "actors": [
+      "Eddie Redmayne",
+      "Katherine Waterston",
+      "Alison Sudol",
+      "Dan Fogler"
+    ],
+    "year": 2016,
+    "runtime": 133,
+    "rating": 0.0,
+    "votes": 232072,
+    "revenue": 234.02,
+    "metascore": 66
+  },
+  {
+    "film_id": "5",
+    "title": "Suic_ide Squad",
+    "genre": "Action,Adventure,Fantasy",
+    "director": "Dav_id Ayer",
+    "actors": [
+      "Will Smith",
+      "Jared Leto",
+      "Margot Robbie",
+      "Viola Davis"
+    ],
+    "year": 2016,
+    "runtime": 123,
+    "rating": 0.0,
+    "votes": 393727,
+    "revenue": 325.02,
+    "metascore": 40
+  },
+  {
+    "film_id": "8",
+    "title": "Mindhorn",
+    "genre": "Comedy",
+    "director": "Sean Foley",
+    "actors": [
+      "Essie Davis",
+      "Andrea Riseborough",
+      "Julian Barratt",
+      "Kenneth Branagh"
+    ],
+    "year": 2016,
+    "runtime": 89,
+    "rating": 0.0,
+    "votes": 2490,
+    "revenue": 0.0,
+    "metascore": 71
+  },
+  {
+    "film_id": "80",
+    "title": "Ghostbusters",
+    "genre": "Action,Comedy,Fantasy",
+    "director": "Paul Feig",
+    "actors": [
+      "Melissa McCarthy",
+      "Kristen Wiig",
+      "Kate McKinnon",
+      "Leslie Jones"
+    ],
+    "year": 2016,
+    "runtime": 116,
+    "rating": 0.0,
+    "votes": 147717,
+    "revenue": 128.34,
+    "metascore": 60
+  },
+  {
+    "film_id": "93",
+    "title": "The Help",
+    "genre": "Drama",
+    "director": "Tate Taylor",
+    "actors": [
+      "Emma Stone",
+      "Viola Davis",
+      "Octavia Spencer",
+      "Bryce Dallas Howard"
+    ],
+    "year": 2007,
+    "runtime": 146,
+    "rating": 0.0,
+    "votes": 225,
+    "revenue": 169.71,
+    "metascore": 62
+  },
+  {
+    "film_id": "45",
+    "title": "Lowr_iders",
+    "genre": "Drama",
+    "director": "Ricardo de Montreuil",
+    "actors": [
+      "Gabriel Chavarria",
+      "Demián Bichir",
+      "Theo Rossi",
+      "Tony Revolori"
+    ],
+    "year": 2016,
+    "runtime": 99,
+    "rating": 0.0,
+    "votes": 279,
+    "revenue": 4.21,
+    "metascore": 57
+  },
+  {
+    "film_id": "87",
+    "title": "Live by Night",
+    "genre": "Crime,Drama",
+    "director": "Ben Affleck",
+    "actors": [
+      "Ben Affleck",
+      "Elle Fanning",
+      "Brendan Gleeson",
+      "Chris Messina"
+    ],
+    "year": 2016,
+    "runtime": 129,
+    "rating": 0.0,
+    "votes": 27869,
+    "revenue": 10.38,
+    "metascore": 49
+  },
+  {
+    "film_id": "90",
+    "title": "The Accountant",
+    "genre": "Action,Crime,Drama",
+    "director": "Gavin O'Connor",
+    "actors": [
+      "Ben Affleck",
+      "Anna Kendrick",
+      "J.K. Simmons",
+      "Jon Bernthal"
+    ],
+    "year": 2016,
+    "runtime": 128,
+    "rating": 0.0,
+    "votes": 162122,
+    "revenue": 86.2,
+    "metascore": 51
+  },
+  {
+    "film_id": "94",
+    "title": "War Dogs",
+    "genre": "Comedy,Crime,Drama",
+    "director": "Todd Phillips",
+    "actors": [
+      "Jonah Hill",
+      "Miles Teller",
+      "Steve Lantz",
+      "Gregg Weiner"
+    ],
+    "year": 2016,
+    "runtime": 114,
+    "rating": 0.0,
+    "votes": 106463,
+    "revenue": 43.02,
+    "metascore": 57
+  },
+  {
+    "film_id": "27",
+    "title": "Bahubali: The Beginning",
+    "genre": "Action,Adventure,Drama",
+    "director": "S.S. Rajamouli",
+    "actors": [
+      "Prabhas",
+      "Rana Daggubati",
+      "Anushka Shetty",
+      "Tamannaah Bhatia"
+    ],
+    "year": 2015,
+    "runtime": 159,
+    "rating": 0.0,
+    "votes": 76193,
+    "revenue": 6.5,
+    "metascore": ""
+  },
+  {
+    "film_id": "92",
+    "title": "Warcraft",
+    "genre": "Action,Adventure,Fantasy",
+    "director": "Duncan Jones",
+    "actors": [
+      "Travis Fimmel",
+      "Paula Patton",
+      "Ben Foster",
+      "Dominic Cooper"
+    ],
+    "year": 2016,
+    "runtime": 123,
+    "rating": 0.0,
+    "votes": 187547,
+    "revenue": 47.17,
+    "metascore": 32
+  },
+  {
+    "film_id": "98",
+    "title": "The Vo_id",
+    "genre": "Horror,Mystery,Sci-Fi",
+    "director": "Jeremy Gillespie",
+    "actors": [
+      "Aaron Poole",
+      "Kenneth Welsh",
+      "Daniel Fathers",
+      "Kathleen Munroe"
+    ],
+    "year": 2016,
+    "runtime": 90,
+    "rating": 0.0,
+    "votes": 9247,
+    "revenue": 0.15,
+    "metascore": 62
+  },
+  {
+    "film_id": "38",
+    "title": "Doctor Strange",
+    "genre": "Action,Adventure,Fantasy",
+    "director": "Scott Derrickson",
+    "actors": [
+      "Benedict Cumberbatch",
+      "Chiwetel Ejiofor",
+      "Rachel McAdams",
+      "Benedict Wong"
+    ],
+    "year": 2016,
+    "runtime": 115,
+    "rating": 0.0,
+    "votes": 293732,
+    "revenue": 232.6,
+    "metascore": 72
+  },
+  {
+    "film_id": "6",
+    "title": "The Great Wall",
+    "genre": "Action,Adventure,Fantasy",
+    "director": "Yimou Zhang",
+    "actors": [
+      "Matt Damon",
+      "Tian Jing",
+      "Willem Dafoe",
+      "Andy Lau"
+    ],
+    "year": 2016,
+    "runtime": 103,
+    "rating": 0.0,
+    "votes": 56036,
+    "revenue": 45.13,
+    "metascore": 42
+  },
+  {
+    "film_id": "19",
+    "title": "Lion",
+    "genre": "Biography,Drama",
+    "director": "Garth Davis",
+    "actors": [
+      "Dev Patel",
+      "Nicole K_idman",
+      "Rooney Mara",
+      "Sunny Pawar"
+    ],
+    "year": 2016,
+    "runtime": 118,
+    "rating": 0.0,
+    "votes": 102061,
+    "revenue": 51.69,
+    "metascore": 69
+  },
+  {
+    "film_id": "72",
+    "title": "Allied",
+    "genre": "Action,Drama,Romance",
+    "director": "Robert Zemeckis",
+    "actors": [
+      "Brad Pitt",
+      "Marion Cotillard",
+      "Jared Harris",
+      "Vincent Ebrahim"
+    ],
+    "year": 2016,
+    "runtime": 124,
+    "rating": 0.0,
+    "votes": 78079,
+    "revenue": 40.07,
+    "metascore": 60
+  },
+  {
+    "film_id": "61",
+    "title": "Batman v Superman: Dawn of Justice",
+    "genre": "Action,Adventure,Sci-Fi",
+    "director": "Zack Snyder",
+    "actors": [
+      "Ben Affleck",
+      "Henry Cavill",
+      "Amy Adams",
+      "Jesse Eisenberg"
+    ],
+    "year": 2016,
+    "runtime": 151,
+    "rating": 0.0,
+    "votes": 472307,
+    "revenue": 330.25,
+    "metascore": 44
+  },
+  {
+    "film_id": "65",
+    "title": "The Prestige",
+    "genre": "Drama,Mystery,Sci-Fi",
+    "director": "Christopher Nolan",
+    "actors": [
+      "Christian Bale",
+      "Hugh Jackman",
+      "Scarlett Johansson",
+      "Michael Caine"
+    ],
+    "year": 2006,
+    "runtime": 130,
+    "rating": 0.0,
+    "votes": 913152,
+    "revenue": 53.08,
+    "metascore": 66
+  },
+  {
+    "film_id": "_design/f2e6f01a9d833e6d7edf525aeb2a6dccd91456f8",
+    "title": "Sans titre",
+    "genre": "Unknown",
+    "director": "Inconnu",
+    "actors": [],
+    "year": 0,
+    "runtime": 0,
+    "rating": 0.0,
+    "votes": 0,
+    "revenue": 0.0,
+    "metascore": 0
+  },
+  {
+    "film_id": "82",
+    "title": "Captain Fantastic",
+    "genre": "Comedy,Drama",
+    "director": "Matt Ross",
+    "actors": [
+      "Viggo Mortensen",
+      "George MacKay",
+      "Samantha Isler",
+      "Annalise Basso"
+    ],
+    "year": 2016,
+    "runtime": 118,
+    "rating": 0.0,
+    "votes": 105081,
+    "revenue": 5.88,
+    "metascore": 72
+  },
+  {
+    "film_id": "86",
+    "title": "Jurassic World",
+    "genre": "Action,Adventure,Sci-Fi",
+    "director": "Colin Trevorrow",
+    "actors": [
+      "Chris Pratt",
+      "Bryce Dallas Howard",
+      "Ty Simpkins",
+      "Judy Greer"
+    ],
+    "year": 2015,
+    "runtime": 124,
+    "rating": 0.0,
+    "votes": 455169,
+    "revenue": 652.18,
+    "metascore": 59
+  },
+  {
+    "film_id": "21",
+    "title": "Gold",
+    "genre": "Adventure,Drama,Thriller",
+    "director": "Stephen Gaghan",
+    "actors": [
+      "Matthew McConaughey",
+      "Edgar Ramírez",
+      "Bryce Dallas Howard",
+      "Corey Stoll"
+    ],
+    "year": 2016,
+    "runtime": 120,
+    "rating": 0.0,
+    "votes": 19053,
+    "revenue": 7.22,
+    "metascore": 49
+  },
+  {
+    "film_id": "10",
+    "title": "Passengers",
+    "genre": "Adventure,Drama,Romance",
+    "director": "Morten Tyldum",
+    "actors": [
+      "Jennifer Lawrence",
+      "Chris Pratt",
+      "Michael Sheen",
+      "Laurence Fishburne"
+    ],
+    "year": 2016,
+    "runtime": 116,
+    "rating": 0.0,
+    "votes": 192177,
+    "revenue": 100.01,
+    "metascore": 41
+  },
+  {
+    "film_id": "22",
+    "title": "Manchester by the Sea",
+    "genre": "Drama",
+    "director": "Kenneth Lonergan",
+    "actors": [
+      "Casey Affleck",
+      "Michelle Williams",
+      "Kyle Chandler",
+      "Lucas Hedges"
+    ],
+    "year": 2016,
+    "runtime": 137,
+    "rating": 0.0,
+    "votes": 134213,
+    "revenue": 47.7,
+    "metascore": 96
+  },
+  {
+    "film_id": "1",
+    "title": "Guardians of the Galaxy",
+    "genre": "Action,Adventure,Sci-Fi",
+    "director": "James Gunn",
+    "actors": [
+      "Chris Pratt",
+      "Vin Diesel",
+      "Bradley Cooper",
+      "Zoe Saldana"
+    ],
+    "year": 2014,
+    "runtime": 121,
+    "rating": 0.0,
+    "votes": 757074,
+    "revenue": 333.13,
+    "metascore": 76
+  },
+  {
+    "film_id": "12",
+    "title": "H_idden Figures",
+    "genre": "Biography,Drama,History",
+    "director": "Theodore Melfi",
+    "actors": [
+      "Taraji P. Henson",
+      "Octavia Spencer",
+      "Janelle Monáe",
+      "Kevin Costner"
+    ],
+    "year": 2016,
+    "runtime": 127,
+    "rating": 0.0,
+    "votes": 93103,
+    "revenue": 169.27,
+    "metascore": 74
+  },
+  {
+    "film_id": "36",
+    "title": "Captain America: Civil War",
+    "genre": "Action,Adventure,Sci-Fi",
+    "director": "Anthony Russo",
+    "actors": [
+      "Chris Evans",
+      "Robert Downey Jr.",
+      "Scarlett Johansson",
+      "Sebastian Stan"
+    ],
+    "year": 2016,
+    "runtime": 147,
+    "rating": 0.0,
+    "votes": 411656,
+    "revenue": 408.08,
+    "metascore": 75
+  },
+  {
+    "film_id": "39",
+    "title": "The Magnificent Seven",
+    "genre": "Action,Adventure,Western",
+    "director": "Antoine Fuqua",
+    "actors": [
+      "Denzel Washington",
+      "Chris Pratt",
+      "Ethan Hawke",
+      "Vincent D'Onofrio"
+    ],
+    "year": 2016,
+    "runtime": 132,
+    "rating": 0.0,
+    "votes": 122853,
+    "revenue": 93.38,
+    "metascore": 54
+  },
+  {
+    "film_id": "60",
+    "title": "Sully",
+    "genre": "Biography,Drama",
+    "director": "Clint Eastwood",
+    "actors": [
+      "Tom Hanks",
+      "Aaron Eckhart",
+      "Laura Linney",
+      "Valerie Mahaffey"
+    ],
+    "year": 2016,
+    "runtime": 96,
+    "rating": 0.0,
+    "votes": 137608,
+    "revenue": 125.07,
+    "metascore": 74
+  },
+  {
+    "film_id": "66",
+    "title": "Kingsman: The Secret Service",
+    "genre": "Action,Adventure,Comedy",
+    "director": "Matthew Vaughn",
+    "actors": [
+      "Colin Firth",
+      "Taron Egerton",
+      "Samuel L. Jackson",
+      "Michael Caine"
+    ],
+    "year": 2014,
+    "runtime": 129,
+    "rating": 0.0,
+    "votes": 440209,
+    "revenue": 128.25,
+    "metascore": 58
+  },
+  {
+    "film_id": "59",
+    "title": "Their Finest",
+    "genre": "Comedy,Drama,Romance",
+    "director": "Lone Scherfig",
+    "actors": [
+      "Gemma Arterton",
+      "Sam Claflin",
+      "Bill Nighy",
+      "Jack Huston"
+    ],
+    "year": 2016,
+    "runtime": 117,
+    "rating": 0.0,
+    "votes": 3739,
+    "revenue": 3.18,
+    "metascore": 76
+  },
+  {
+    "film_id": "56",
+    "title": "Silence",
+    "genre": "Adventure,Drama,History",
+    "director": "Martin Scorsese",
+    "actors": [
+      "Andrew Garfield",
+      "Adam Driver",
+      "Liam Neeson",
+      "Tadanobu Asano"
+    ],
+    "year": 2016,
+    "runtime": 161,
+    "rating": 0.0,
+    "votes": 49190,
+    "revenue": 7.08,
+    "metascore": 79
+  },
+  {
+    "film_id": "50",
+    "title": "The Last Face",
+    "genre": "Drama",
+    "director": "Sean Penn",
+    "actors": [
+      "Charlize Theron",
+      "Javier Bardem",
+      "Adèle Exarchopoulos",
+      "Jared Harris"
+    ],
+    "year": 2016,
+    "runtime": 130,
+    "rating": 0.0,
+    "votes": 987,
+    "revenue": 0.0,
+    "metascore": 16
+  },
+  {
+    "film_id": "81",
+    "title": "Inception",
+    "genre": "Action,Adventure,Sci-Fi",
+    "director": "Christopher Nolan",
+    "actors": [
+      "Leonardo DiCaprio",
+      "Joseph Gordon-Levitt",
+      "Ellen Page",
+      "Ken Watanabe"
+    ],
+    "year": 2010,
+    "runtime": 148,
+    "rating": 0.0,
+    "votes": 1583625,
+    "revenue": 292.57,
+    "metascore": 74
+  },
+  {
+    "film_id": "54",
+    "title": "John Wick",
+    "genre": "Action,Crime,Thriller",
+    "director": "Chad Stahelski",
+    "actors": [
+      "Keanu Reeves",
+      "Michael Nyqvist",
+      "Alfie Allen",
+      "Willem Dafoe"
+    ],
+    "year": 2014,
+    "runtime": 101,
+    "rating": 0.0,
+    "votes": 321933,
+    "revenue": 43.0,
+    "metascore": 68
+  },
+  {
+    "film_id": "73",
+    "title": "A Monster Calls",
+    "genre": "Drama,Fantasy",
+    "director": "J.A. Bayona",
+    "actors": [
+      "Lewis MacDougall",
+      "Sigourney Weaver",
+      "Felicity Jones",
+      "Toby Kebbell"
+    ],
+    "year": 2016,
+    "runtime": 108,
+    "rating": 0.0,
+    "votes": 39134,
+    "revenue": 3.73,
+    "metascore": 76
+  },
+  {
+    "film_id": "57",
+    "title": "Don't Breathe",
+    "genre": "Crime,Horror,Thriller",
+    "director": "Fede Alvarez",
+    "actors": [
+      "Stephen Lang",
+      "Jane Levy",
+      "Dylan Minnette",
+      "Daniel Zovatto"
+    ],
+    "year": 2016,
+    "runtime": 88,
+    "rating": 0.0,
+    "votes": 121103,
+    "revenue": 89.21,
+    "metascore": 71
+  },
+  {
+    "film_id": "77",
+    "title": "The Avengers",
+    "genre": "Action,Sci-Fi",
+    "director": "Joss Whedon",
+    "actors": [
+      "Robert Downey Jr.",
+      "Chris Evans",
+      "Scarlett Johansson",
+      "Jeremy Renner"
+    ],
+    "year": 2012,
+    "runtime": 143,
+    "rating": 0.0,
+    "votes": 1045588,
+    "revenue": 623.28,
+    "metascore": 69
+  },
+  {
+    "film_id": "88",
+    "title": "Avatar",
+    "genre": "Action,Adventure,Fantasy",
+    "director": "James Cameron",
+    "actors": [
+      "Sam Worthington",
+      "Zoe Saldana",
+      "Sigourney Weaver",
+      "Michelle Rodriguez"
+    ],
+    "year": 2009,
+    "runtime": 162,
+    "rating": 0.0,
+    "votes": 935408,
+    "revenue": 760.51,
+    "metascore": 83
+  },
+  {
+    "film_id": "40",
+    "title": "5- 25- 77",
+    "genre": "Comedy,Drama",
+    "director": "Patrick Read Johnson",
+    "actors": [
+      "John Francis Daley",
+      "Austin Pendleton",
+      "Colleen Camp",
+      "Neil Flynn"
+    ],
+    "year": 2016,
+    "runtime": 113,
+    "rating": 0.0,
+    "votes": 241,
+    "revenue": 0.0,
+    "metascore": ""
+  },
+  {
+    "film_id": "95",
+    "title": "Avengers: Age of Ultron",
+    "genre": "Action,Adventure,Sci-Fi",
+    "director": "Joss Whedon",
+    "actors": [
+      "Robert Downey Jr.",
+      "Chris Evans",
+      "Mark Ruffalo",
+      "Chris Hemsworth"
+    ],
+    "year": 2015,
+    "runtime": 141,
+    "rating": 0.0,
+    "votes": 516895,
+    "revenue": 458.99,
+    "metascore": 66
+  },
+  {
+    "film_id": "13",
+    "title": "Rogue One",
+    "genre": "Action,Adventure,Sci-Fi",
+    "director": "Gareth Edwards",
+    "actors": [
+      "Felicity Jones",
+      "Diego Luna",
+      "Alan Tudyk",
+      "Donnie Yen"
+    ],
+    "year": 2016,
+    "runtime": 133,
+    "rating": 0.0,
+    "votes": 323118,
+    "revenue": 532.17,
+    "metascore": 65
+  },
+  {
+    "film_id": "26",
+    "title": "Paris pieds nus",
+    "genre": "Comedy",
+    "director": "Dominique Abel",
+    "actors": [
+      "Fiona Gordon",
+      "Dominique Abel",
+      "Emmanuelle Riva",
+      "Pierre Richard"
+    ],
+    "year": 2016,
+    "runtime": 83,
+    "rating": 0.0,
+    "votes": 222,
+    "revenue": 0.0,
+    "metascore": ""
+  },
+  {
+    "film_id": "37",
+    "title": "Interstellar",
+    "genre": "Adventure,Drama,Sci-Fi",
+    "director": "Christopher Nolan",
+    "actors": [
+      "Matthew McConaughey",
+      "Anne Hathaway",
+      "Jessica Chastain",
+      "Mackenzie Foy"
+    ],
+    "year": 2014,
+    "runtime": 169,
+    "rating": 0.0,
+    "votes": 1047747,
+    "revenue": 187.99,
+    "metascore": 74
+  },
+  {
+    "film_id": "16",
+    "title": "The Secret Life of Pets",
+    "genre": "Animation,Adventure,Comedy",
+    "director": "Chris Renaud",
+    "actors": [
+      "Louis C.K.",
+      "Eric Stonestreet",
+      "Kevin Hart",
+      "Lake Bell"
+    ],
+    "year": 2016,
+    "runtime": 87,
+    "rating": 0.0,
+    "votes": 120259,
+    "revenue": 368.31,
+    "metascore": 61
+  },
+  {
+    "film_id": "4",
+    "title": "Sing",
+    "genre": "Animation,Comedy,Family",
+    "director": "Christophe Lourdelet",
+    "actors": [
+      "Matthew McConaughey",
+      "Reese Witherspoon",
+      "Seth MacFarlane",
+      "Scarlett Johansson"
+    ],
+    "year": 2016,
+    "runtime": 108,
+    "rating": 0.0,
+    "votes": 60545,
+    "revenue": 270.32,
+    "metascore": 59
+  },
+  {
+    "film_id": "52",
+    "title": "Underworld: Blood Wars",
+    "genre": "Action,Adventure,Fantasy",
+    "director": "Anna Foerster",
+    "actors": [
+      "Kate Beckinsale",
+      "Theo James",
+      "Tobias Menzies",
+      "Lara Pulver"
+    ],
+    "year": 2016,
+    "runtime": 91,
+    "rating": 0.0,
+    "votes": 41362,
+    "revenue": 30.35,
+    "metascore": 23
+  },
+  {
+    "film_id": "2",
+    "title": "Prometheus",
+    "genre": "Adventure,Mystery,Sci-Fi",
+    "director": "R_idley Scott",
+    "actors": [
+      "Noomi Rapace",
+      "Logan Marshall-Green",
+      "Michael Fassbender",
+      "Charlize Theron"
+    ],
+    "year": 2012,
+    "runtime": 124,
+    "rating": 0.0,
+    "votes": 485820,
+    "revenue": 126.46,
+    "metascore": 65
+  },
+  {
+    "film_id": "41",
+    "title": "Sausage Party",
+    "genre": "Animation,Adventure,Comedy",
+    "director": "Greg Tiernan",
+    "actors": [
+      "Seth Rogen",
+      "Kristen Wiig",
+      "Jonah Hill",
+      "Alistair Abell"
+    ],
+    "year": 2016,
+    "runtime": 89,
+    "rating": 0.0,
+    "votes": 120690,
+    "revenue": 97.66,
+    "metascore": 66
+  },
+  {
+    "film_id": "74",
+    "title": "Collateral Beauty",
+    "genre": "Drama,Romance",
+    "director": "Dav_id F_idel",
+    "actors": [
+      "Will Smith",
+      "Edward Norton",
+      "Kate Winslet",
+      "Michael Peña"
+    ],
+    "year": 2016,
+    "runtime": 97,
+    "rating": 0.0,
+    "votes": 43977,
+    "revenue": 30.98,
+    "metascore": 23
+  },
+  {
+    "film_id": "7",
+    "title": "La La Land",
+    "genre": "Comedy,Drama,Music",
+    "director": "Damien Chazelle",
+    "actors": [
+      "Ryan Gosling",
+      "Emma Stone",
+      "Rosemarie DeWitt",
+      "J.K. Simmons"
+    ],
+    "year": 2016,
+    "runtime": 128,
+    "rating": 0.0,
+    "votes": 258682,
+    "revenue": 151.06,
+    "metascore": 93
+  },
+  {
+    "film_id": "78",
+    "title": "Inglourious Basterds",
+    "genre": "Adventure,Drama,War",
+    "director": "Quentin Tarantino",
+    "actors": [
+      "Brad Pitt",
+      "Diane Kruger",
+      "Eli Roth",
+      "Mélanie Laurent"
+    ],
+    "year": 2009,
+    "runtime": 153,
+    "rating": 0.0,
+    "votes": 959065,
+    "revenue": 120.52,
+    "metascore": 69
+  },
+  {
+    "film_id": "83",
+    "title": "The Wolf of Wall Street",
+    "genre": "Biography,Comedy,Crime",
+    "director": "Martin Scorsese",
+    "actors": [
+      "Leonardo DiCaprio",
+      "Jonah Hill",
+      "Margot Robbie",
+      "Matthew McConaughey"
+    ],
+    "year": 2013,
+    "runtime": 180,
+    "rating": 0.0,
+    "votes": 865134,
+    "revenue": 116.87,
+    "metascore": 75
+  },
+  {
+    "film_id": "75",
+    "title": "Zootopia",
+    "genre": "Animation,Adventure,Comedy",
+    "director": "Byron Howard",
+    "actors": [
+      "Ginnifer Goodwin",
+      "Jason Bateman",
+      "_idris Elba",
+      "Jenny Slate"
+    ],
+    "year": 2016,
+    "runtime": 108,
+    "rating": 0.0,
+    "votes": 296853,
+    "revenue": 341.26,
+    "metascore": 78
+  },
+  {
+    "film_id": "97",
+    "title": "Kimi no na wa",
+    "genre": "Animation,Drama,Fantasy",
+    "director": "Makoto Shinkai",
+    "actors": [
+      "Ryûnosuke Kamiki",
+      "Mone Kamishiraishi",
+      "Ryô Narita",
+      "Aoi Yuki"
+    ],
+    "year": 2016,
+    "runtime": 106,
+    "rating": 0.0,
+    "votes": 34110,
+    "revenue": 4.68,
+    "metascore": 79
+  },
+  {
+    "film_id": "23",
+    "title": "Hounds of Love",
+    "genre": "Crime,Drama,Horror",
+    "director": "Ben Young",
+    "actors": [
+      "Emma Booth",
+      "Ashleigh Cummings",
+      "Stephen Curry",
+      "Susie Porter"
+    ],
+    "year": 2016,
+    "runtime": 108,
+    "rating": 0.0,
+    "votes": 1115,
+    "revenue": 0.0,
+    "metascore": 72
+  },
+  {
+    "film_id": "96",
+    "title": "The Nice Guys",
+    "genre": "Action,Comedy,Crime",
+    "director": "Shane Black",
+    "actors": [
+      "Russell Crowe",
+      "Ryan Gosling",
+      "Angourie Rice",
+      "Matt Bomer"
+    ],
+    "year": 2016,
+    "runtime": 116,
+    "rating": 0.0,
+    "votes": 175067,
+    "revenue": 36.25,
+    "metascore": 70
+  },
+  {
+    "film_id": "69",
+    "title": "Wakefield",
+    "genre": "Drama",
+    "director": "Robin Swicord",
+    "actors": [
+      "Bryan Cranston",
+      "Jennifer Garner",
+      "Beverly D'Angelo",
+      "Jason O'Mara"
+    ],
+    "year": 2016,
+    "runtime": 106,
+    "rating": 0.0,
+    "votes": 291,
+    "revenue": 0.01,
+    "metascore": 61
+  },
+  {
+    "film_id": "48",
+    "title": "Fallen",
+    "genre": "Adventure,Drama,Fantasy",
+    "director": "Scott Hicks",
+    "actors": [
+      "Hermione Corfield",
+      "Addison Timlin",
+      "Joely Richardson",
+      "Jeremy Irvine"
+    ],
+    "year": 2016,
+    "runtime": 91,
+    "rating": 0.0,
+    "votes": 5103,
+    "revenue": 0.0,
+    "metascore": ""
+  }
+]
