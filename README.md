@@ -14,17 +14,17 @@ L'objectif est de développer une application en Python (avec Streamlit, par exe
 
 git clone https://github.com/CatillonESIEA/Nosql-Projet.git
 
-cd nom-du-projet
-
 Créer un environnement virtuel et l'activer
 
 python -m venv .venv
 
-.venv\Scripts\activate     # Sur Windows
+.venv\Scripts\activate 
 
 Installer les dépendances
 
 pip install -r requirements.txt
 
 Lancer l'application Streamlit
+
+Un protocole d'exécution plus précis apparaît en conclusion du rapport déposé sur Moodle.
 
