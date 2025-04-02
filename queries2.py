@@ -1,140 +1,224 @@
-from pymongo import MongoClient
-import matplotlib.pyplot as plt
-import seaborn as sns
-import numpy as np
-from pymongo.server_api import ServerApi
-from dotenv import load_dotenv
-import os
+from neo4j_connection import Neo4jConnection
 
-load_dotenv()
-uri = os.getenv("MONGODB_URI")
+class Neo4jQueries:
+    def __init__(self):
+        self.conn = Neo4jConnection()
+        self.driver = self.conn.connect()
+    
+    def run_query(self, query, **params):
+        with self.driver.session() as session:
+            result = session.run(query, **params)
+            return [dict(record) for record in result]
+        
+    def close(self):
+        if self.driver:
+            self.driver.close()
+    
+    # Question 14
+    def get_most_prolific_actor(self):
+        query = """
+        MATCH (a:Actor)-[:ACTED_IN]->(f:Film)
+        RETURN a.name AS actor_name, COUNT(f) AS film_count
+        ORDER BY film_count DESC
+        LIMIT 1
+        """
+        return self.run_query(query)
+    
+    # Question 15
+    def get_actors_with_anne_hathaway(self):
+        query = """
+        MATCH (anne:Actor {name: 'Anne Hathaway'})-[:ACTED_IN]->(f:Film)<-[:ACTED_IN]-(coactor:Actor)
+        WHERE coactor <> anne
+        RETURN DISTINCT coactor.name AS actor_name
+        """
+        return self.run_query(query)
+    
+    # Question 16
+    def get_actor_with_highest_total_revenue(self):
+        query = """
+        MATCH (a:Actor)-[:ACTED_IN]->(f:Film)
+        RETURN a.name AS actor_name, SUM(f.revenue) AS total_revenue
+        ORDER BY total_revenue DESC
+        LIMIT 1
+        """
+        return self.run_query(query)
+    
+    # Question 17
+    def get_average_votes(self):
+        query = """
+        MATCH (f:Film)
+        RETURN avg(f.votes) AS average_votes
+        """
+        return self.run_query(query)
+    
+    # Question 18
+    def get_most_common_genre(self):
+        query = """
+        MATCH (f:Film)
+        WHERE f.genre <> 'Unknown'
+        WITH f.genre AS genre, COUNT(*) AS count
+        RETURN genre, count
+        ORDER BY count DESC
+        LIMIT 1
+        """
+        return self.run_query(query)
+    
+    # Question 19
+    def get_coactors_films(self, your_name="Matt Damon"):
+        query = """
+        MATCH (you:Actor {name: $your_name})-[:ACTED_IN]->(f:Film)<-[:ACTED_IN]-(coactor:Actor)-[:ACTED_IN]->(other_film:Film)
+        WHERE NOT (you)-[:ACTED_IN]->(other_film)
+        RETURN DISTINCT other_film.title AS film_title
+        LIMIT 5
+        """
+        return self.run_query(query, your_name=your_name)
+    
+    # Question 20
+    def get_director_most_actors(self):
+        query = """
+        MATCH (d:Director)-[:DIRECTED]->(f:Film)<-[:ACTED_IN]-(a:Actor)
+        RETURN d.name AS director_name, COUNT(DISTINCT a) AS actor_count
+        ORDER BY actor_count DESC
+        LIMIT 1
+        """
+        return self.run_query(query)
+    
+    # Question 21
+    def get_most_connected_films(self):
+        query = """
+        MATCH (f1:Film)<-[:ACTED_IN]-(a:Actor)-[:ACTED_IN]->(f2:Film)
+        WHERE f1 <> f2
+        RETURN f1.title AS film_title, COUNT(DISTINCT a) AS shared_actors_count
+        ORDER BY shared_actors_count DESC
+        LIMIT 5
+        """
+        return self.run_query(query)
+    
+    # Question 22
+    def get_actors_most_directors(self):
+        query = """
+        MATCH (a:Actor)-[:ACTED_IN]->(f:Film)<-[:DIRECTED]-(d:Director)
+        RETURN a.name AS actor_name, COUNT(DISTINCT d) AS director_count
+        ORDER BY director_count DESC
+        LIMIT 5
+        """
+        return self.run_query(query)
+    
+    # Question 23
+    def recommend_movie_for_actor(self, actor_name):
+        query = """
+        MATCH (a:Actor {name: $actor_name})-[:ACTED_IN]->(f:Film)
+        WITH COLLECT(DISTINCT f.genre) AS actor_genres
+        MATCH (recFilm:Film)
+        WHERE recFilm.genre IN actor_genres
+        AND NOT EXISTS { (a:Actor {name: $actor_name})-[:ACTED_IN]->(recFilm) }
+        RETURN recFilm.title AS recommended_movie
+        LIMIT 1
+        """
+        return self.run_query(query, actor_name=actor_name)
+    
+    # Question 24
+    def create_influence_relationships(self):
+        query = """
+        MATCH (d1:Director)-[:DIRECTED]->()<-[:ACTED_IN]-(a:Actor)-[:ACTED_IN]->()<-[:DIRECTED]-(d2:Director)
+        WHERE d1 <> d2 AND NOT (d1)-[:INFLUENCED_BY]->(d2)
+        WITH d1, d2, COUNT(DISTINCT a) AS common_actors
+        WHERE common_actors > 1
+        MERGE (d1)-[:INFLUENCED_BY {weight: common_actors}]->(d2)
+        RETURN COUNT(*) AS relationships_created
+        """
+        return self.run_query(query)
+    
+    # Question 25
+    def shortest_path_between_actors(self, actor1, actor2):
+        query = """
+        MATCH path = shortestPath((a1:Actor {name: $actor1})-[:ACTED_IN|DIRECTED*]-(a2:Actor {name: $actor2}))
+        RETURN [n IN nodes(path) | 
+            CASE WHEN n:Actor THEN 'Actor: ' + n.name 
+                 WHEN n:Film THEN 'Film: ' + n.title 
+                 WHEN n:Director THEN 'Director: ' + n.name
+                 ELSE '' END] AS path
+        """
+        return self.run_query(query, actor1=actor1, actor2=actor2)
+    
+    # Question 26
+    def detect_actor_communities(self):
+        query = """
+        MATCH (a:Actor)
+        WITH a, id(a) AS id
+        CALL {
+            WITH a
+            MATCH (a)-[:ACTED_IN]->()<-[:ACTED_IN]-(other:Actor)
+            RETURN other
+        }
+        WITH a, id, COLLECT(DISTINCT other) AS collaborators
+        RETURN a.name AS actor_name, 
+            SIZE(collaborators) AS collaboration_count,
+            HEAD([c IN collaborators | c.name]) AS main_collaborator
+        ORDER BY collaboration_count DESC
+        LIMIT 20
+        """
+        return self.run_query(query)
 
-client = MongoClient(
-    uri,
-    server_api=ServerApi('1'),
-    socketTimeoutMS=60000,
-    connectTimeoutMS=60000
-)
+    # Question 27
+    def films_common_genre_diff_directors(self):
+        query = """
+        MATCH (f1:Film)<-[:DIRECTED]-(d1:Director),
+            (f2:Film)<-[:DIRECTED]-(d2:Director)
+        WHERE f1.genre = f2.genre 
+        AND d1 <> d2
+        AND f1 <> f2
+        RETURN f1.title AS film1, f2.title AS film2, 
+            f1.genre AS genre, d1.name AS director1, 
+            d2.name AS director2
+        LIMIT 10
+        """
+        return self.run_query(query)
 
-try:
-    client.admin.command('ping')
-    print("Connexion réussie à MongoDB Atlas !")
-except Exception as e:
-    print(f"Erreur : {e}")
+    # Question 28
+    def recommend_based_on_actor_prefs(self, actor_name):
+        query = """
+        MATCH (a:Actor {name: $actor_name})-[:ACTED_IN]->(f:Film)
+        WITH a, COLLECT(DISTINCT f.genre) AS preferred_genres
+        MATCH (rec:Film)
+        WHERE rec.genre IN preferred_genres
+        AND NOT EXISTS((a)-[:ACTED_IN]->(rec))
+        RETURN rec.title AS recommended_film, rec.genre AS genre
+        ORDER BY rec.rating DESC
+        LIMIT 5
+        """
+        return self.run_query(query, actor_name=actor_name)
 
-db = client["entertainment"]
-films_collection = db["films"]
+    # Question 29
+    def create_competition_relationships(self):
+        query = """
+        MATCH (d1:Director)-[:DIRECTED]->(f1:Film),
+            (d2:Director)-[:DIRECTED]->(f2:Film)
+        WHERE d1 <> d2 
+        AND f1.year = f2.year
+        AND f1.genre = f2.genre
+        AND NOT EXISTS((d1)-[:COMPETED_WITH]->(d2))
+        MERGE (d1)-[r:COMPETED_WITH]->(d2)
+        SET r.year = f1.year,
+            r.genre = f1.genre
+        RETURN COUNT(r) AS new_competition_relationships_created
+        """
+        return self.run_query(query)
 
-def most_films_year():
-    pipeline = [
-        {"$group": {"_id": "$year", "count": {"$sum": 1}}},
-        {"$sort": {"count": -1}},
-        {"$limit": 1}
-    ]
-    result = list(films_collection.aggregate(pipeline))
-    return result[0] if result else None
-
-def count_films_after_1999():
-    return films_collection.count_documents({"year": {"$gt": 1999}})
-
-def average_votes_2007():
-    films_2007 = films_collection.find({"year": 2007})
-    total_votes, count = 0, 0
-    for film in films_2007:
-        total_votes += film.get("Votes", 0)
-        count += 1
-    return total_votes / count if count > 0 else None
-
-def plot_films_by_year():
-    years = [film["year"] for film in films_collection.find() if "year" in film]
-    if years:
-        fig, ax = plt.subplots(figsize=(10, 6))
-        sns.histplot(years, kde=False, bins=30, color='blue', ax=ax)
-        ax.set_title("Nombre de films par année")
-        ax.set_xlabel("Année")
-        ax.set_ylabel("Nombre de films")
-        return fig
-    return None
-
-def list_genres():
-    return films_collection.distinct("genre")
-
-def film_avec_plus_de_revenus():
-    top_revenue_film = films_collection.find({"Revenue (Millions)": {"$ne": ""}}).sort("Revenue (Millions)", -1).limit(1)
-    return list(top_revenue_film)[0] if top_revenue_film else None
-
-def directors_with_more_than_5_films():
-    pipeline = [
-        {"$group": {"_id": "$Director", "count": {"$sum": 1}}},
-        {"$match": {"count": {"$gt": 5}}},
-        {"$sort": {"count": -1}}
-    ]
-    return list(films_collection.aggregate(pipeline))
-
-def genre_with_highest_avg_revenue():
-    pipeline = [
-        {"$group": {"_id": "$genre", "avg_revenue": {"$avg": "$Revenue (Millions)"}}},
-        {"$sort": {"avg_revenue": -1}},
-        {"$limit": 1}
-    ]
-    result = list(films_collection.aggregate(pipeline))
-    return result[0] if result else None
-
-def top_rated_films_by_decade():
-    decades = ['1990-1999', '2000-2009', '2010-2019']
-    result = {}
-    for decade in decades:
-        start_year, end_year = map(int, decade.split('-'))
-        films = list(films_collection.find({"year": {"$gte": start_year, "$lte": end_year}, "rating": {"$ne": "unrated"}}).sort("rating", 1).limit(3))
-        result[decade] = films
-    return result
-
-def longest_movie_by_genre():
-    pipeline = [
-        {"$unwind": "$genre"},
-        {"$sort": {"Runtime (Minutes)": -1}},
-        {"$group": {"_id": "$genre", "longest_movie": {"$first": "$title"}, "runtime": {"$first": "$Runtime (Minutes)"}}},
-        {"$sort": {"_id": 1}}
-    ]
-    return list(films_collection.aggregate(pipeline))
-
-def create_and_display_view():
-    view_name = "high_rated_high_revenue_films"
-    db[view_name].drop()
-    db.command({
-        "create": view_name,
-        "viewOn": "films",
-        "pipeline": [{"$match": {"Metascore": {"$gt": 80}, "Revenue (Millions)": {"$gt": 50}}}]
-    })
-    return list(db[view_name].find().limit(5))
-
-def correlation_runtime_revenue():
-    films = films_collection.find()
-    runtimes, revenues = [], []
-    for film in films:
-        try:
-            runtime = float(film.get("Runtime (Minutes)", 0))
-            revenue = float(film.get("Revenue (Millions)", 0))
-            if runtime > 0 and revenue > 0:
-                runtimes.append(runtime)
-                revenues.append(revenue)
-        except (ValueError, TypeError):
-            continue
-    return np.corrcoef(runtimes, revenues)[0][1] if len(runtimes) > 1 and len(revenues) > 1 else None
-
-def average_runtime_by_decade():
-    decades = {"1990-1999": [], "2000-2009": [], "2010-2019": []}
-    films = films_collection.find()
-    for film in films:
-        try:
-            year = int(film.get("year", 0))
-            runtime = float(film.get("Runtime (Minutes)", 0))
-            if 1990 <= year <= 1999:
-                decades["1990-1999"].append(runtime)
-            elif 2000 <= year <= 2009:
-                decades["2000-2009"].append(runtime)
-            elif 2010 <= year <= 2019:
-                decades["2010-2019"].append(runtime)
-        except (ValueError, TypeError):
-            continue
-    return {decade: (sum(runtimes) / len(runtimes) if runtimes else None) for decade, runtimes in decades.items()}
+    # Question 30
+    def analyze_collaborations_success(self):
+        query = """
+        MATCH (d:Director)-[:DIRECTED]->(f:Film)<-[:ACTED_IN]-(a:Actor)
+        WITH d, a, COUNT(*) AS collaboration_count,
+            AVG(f.rating) AS avg_rating,
+            AVG(f.revenue) AS avg_revenue
+        WHERE collaboration_count > 1
+        RETURN d.name AS director, 
+            a.name AS actor, 
+            collaboration_count,
+            avg_rating,
+            avg_revenue
+        ORDER BY collaboration_count DESC
+        LIMIT 10
+        """
+        return self.run_query(query)
