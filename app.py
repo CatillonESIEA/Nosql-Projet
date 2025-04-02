@@ -22,9 +22,10 @@ from neo4j_queries2 import Neo4jQueries  # Importation des requêtes Neo4j
 # Titre principal
 st.title("Application d'analyse de films")
 
-# 1. Année avec le plus grand nombre de films
-st.header("Année avec le plus grand nombre de films")
-st.write(most_films_year())
+# 1. Sélection de l'année de films
+year = st.selectbox('Sélectionnez une année pour les films', range(1900, 2025))
+st.header(f"Films de l'année {year}")
+st.write(most_films_year(year))
 
 # 2. Nombre de films après 1999
 st.header("Nombre de films sortis après 1999")
@@ -40,9 +41,11 @@ fig = plot_films_by_year()
 if fig:
     st.pyplot(fig)
 
-# 5. Liste des genres de films
+# 5. Liste des genres de films avec filtrage
 st.header("Genres de films disponibles")
-st.write(list_genres())
+genre_filter = st.selectbox("Sélectionnez un genre", list_genres())
+st.write(f"Films du genre {genre_filter}:")
+st.write(film_avec_plus_de_revenus(genre=genre_filter))
 
 # 6. Film ayant généré le plus de revenus
 st.header("Film ayant généré le plus de revenus")
@@ -100,8 +103,9 @@ st.header("Genre de film le plus commun")
 st.write(neo_queries.get_most_common_genre())
 
 # 19. Films des co-acteurs (par défaut Matt Damon)
-st.header("Films des co-acteurs de Matt Damon")
-st.write(neo_queries.get_coactors_films("Matt Damon"))
+coactor_name = st.text_input("Entrez un acteur pour voir ses films avec co-acteurs", "Matt Damon")
+st.header(f"Films des co-acteurs de {coactor_name}")
+st.write(neo_queries.get_coactors_films(coactor_name))
 
 # 20. Réalisateur avec le plus d'acteurs
 st.header("Réalisateur ayant travaillé avec le plus d'acteurs")
