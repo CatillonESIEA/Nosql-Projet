@@ -131,21 +131,5 @@ st.write(neo_queries.shortest_path_between_actors("Tom Hanks", "Scarlett Johanss
 st.header("Communautés d'acteurs")
 st.write(neo_queries.detect_actor_communities())
 
-# 27. Films avec genres communs mais réalisateurs différents
-st.header("Films avec genres communs mais réalisateurs différents")
-st.write(neo_queries.films_common_genre_diff_directors())
-
-# 28. Recommandation basée sur les préférences de Tom Hanks
-st.header("Recommandation basée sur les préférences de Tom Hanks")
-st.write(neo_queries.recommend_based_on_actor_prefs("Tom Hanks"))
-
-# 29. Création des relations de concurrence
-st.header("Création des relations de concurrence")
-st.write(neo_queries.create_competition_relationships())
-
-# 30. Analyse des collaborations réussies
-st.header("Analyse des collaborations réalisateurs-acteurs")
-st.write(neo_queries.analyze_collaborations_success())
-
 # Fermer la connexion après usage
 neo_queries.close()
