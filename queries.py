@@ -9,7 +9,6 @@ import os
 load_dotenv()
 uri = os.getenv("MONGODB_URI")
 
-# Le reste du fichier reste inchangé...
 
 client = MongoClient(
     uri,
