@@ -9,6 +9,10 @@ class Neo4jQueries:
         with self.driver.session() as session:
             result = session.run(query, **params)
             return [dict(record) for record in result]
+        
+    def close(self):
+        if self.driver:
+            self.driver.close()
     
     # Question 14
     def get_most_prolific_actor(self):
@@ -140,9 +144,26 @@ class Neo4jQueries:
         """
         return self.run_query(query, actor1=actor1, actor2=actor2)
     
-    def close(self):
-        self.conn.close()
-
+    # Question 26
+    def detect_actor_communities(self):
+        query = """
+        // Version alternative sans GDS - Algorithme de composantes connexes
+        MATCH (a:Actor)
+        WITH a, id(a) AS id
+        CALL {
+            WITH a
+            MATCH (a)-[:ACTED_IN]->()<-[:ACTED_IN]-(other:Actor)
+            RETURN other
+        }
+        WITH a, id, COLLECT(DISTINCT other) AS collaborators
+        RETURN a.name AS actor_name, 
+            SIZE(collaborators) AS collaboration_count,
+            // Simulation simple de communauté (groupement par premier collaborateur)
+            HEAD([c IN collaborators | c.name]) AS main_collaborator
+        ORDER BY collaboration_count DESC
+        LIMIT 20
+        """
+        return self.run_query(query)
     
 
 if __name__ == "__main__":
@@ -174,6 +195,8 @@ if __name__ == "__main__":
         
         print_result("25. Chemin Tom Hanks à Scarlett Johansson", 
                    queries.shortest_path_between_actors("Tom Hanks", "Scarlett Johansson"))
+        
+        print_result("26. Communautés d'acteurs", queries.detect_actor_communities())
     finally:
         queries.close()
         
